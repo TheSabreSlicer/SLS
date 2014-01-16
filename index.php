@@ -2,9 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <?php
-$mapname = $_GET[mapname];
-if (empty (mixed $mapname))
-	$mapname = 'default';
+$mapname = 'default';
+if (isset($_GET['mapname']))
+{
+	$mapname = $_GET['mapname'];
+}
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>SLS | Title</title>
