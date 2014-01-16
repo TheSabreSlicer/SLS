@@ -10,7 +10,7 @@ if (isset($_GET['mapname']))
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>SLS | Title</title>
-<link rel="stylesheet" type="text/css" href="/css/styles.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css.php">
 </head>
 
 <body>
