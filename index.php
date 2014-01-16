@@ -102,8 +102,6 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	font-weight: bold;
 	color: #F66; /* set this color to what you want your bold color to be */
 }
-.container .content namemap {
-	text-align: center;
 -->
 </style></head>
 
@@ -111,9 +109,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 <div class="container">
   <div class="content">
-    <h1 class="ghosting">Title - Put Title Here</h1>
+    <h1 class="bold">Title - Put Title Here</h1>
     <p class="content">Put your content here. The current map is
-      <span class="ghosting">
+      <span class="bold">
       <?php
     echo "$mapname";
 	?>.</span></p>
