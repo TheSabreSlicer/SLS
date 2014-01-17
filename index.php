@@ -2,11 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <?php
-$mapname = 'default';
-if (isset($_GET['mapname']))
-{
-	$mapname = $_GET['mapname'];
-}
+$mapname = (isset($_GET['mapname']) ? $_GET['mapname'] : 'default');
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>SLS | Title</title>
@@ -18,9 +14,8 @@ body {
         margin: 0;
         padding: 0;
         color: #000;
-        background-image: url(images/<?php
-          echo "$mapname"; /* this is what changes your background image*/
-        ?>.jpg);
+        /* this is what changes your background image */
+        background-image: url(images/<?=$mapname?>.jpg);
         background-repeat: no-repeat;
 }
 
@@ -113,9 +108,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
     <h1 class="bold">Title - Put Title Here</h1>
     <p class="content">Put your content here. The current map is
       <span class="bold">
-      <?php
-    echo "$mapname";
-	?>.</span></p>
+        <?=$mapname?>.
+      </span></p>
     <h2 class="bold">List Title</h2><ol>
 <li><span class="bold">One.</span> List item 1.</li>
 <li><span class="bold">Two.</span> List item 2.</li>
